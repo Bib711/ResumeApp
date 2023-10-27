@@ -1,0 +1,65 @@
+/* Add this content to src/App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background color */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #0066cc; /* Blue color for labels */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.preview {
+  margin-top: 20px;
+}
+
+/* Text styles */
+.text-primary {
+  color: #0066cc; /* Blue color for primary text */
+}
+
+.text-secondary {
+  color: #444; /* Dark gray color for secondary text */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
