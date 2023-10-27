@@ -9,57 +9,77 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-
 .container {
+  display: flex;
   max-width: 800px;
-  padding: 20px;
-  background-color: #f9f9f9; /* Light gray background color */
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-section {
+  border-right: 1px solid #ccc;
 }
 
 h1 {
   text-align: center;
   color: #333;
-  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  font-weight: bold;
   margin: 10px 0;
-  color: #0066cc; /* Blue color for labels */
 }
 
-input {
+textarea,input {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .preview {
   margin-top: 20px;
 }
 
-/* Text styles */
-.text-primary {
-  color: #0066cc; /* Blue color for primary text */
+.done-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.text-secondary {
-  color: #444; /* Dark gray color for secondary text */
+.done-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+hr {
+  height: 2px;
+  background-color: black;
 }
 
 /* Media query for responsiveness */
 @media (max-width: 600px) {
   .container {
-    padding: 10px;
+    flex-direction: column;
+  }
+
+  .left-section {
+    border-right: none;
   }
 }
